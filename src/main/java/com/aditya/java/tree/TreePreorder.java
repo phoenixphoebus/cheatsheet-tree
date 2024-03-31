@@ -7,7 +7,7 @@ import com.aditya.java.tree.pojo.Node;
 import com.aditya.java.tree.util.TreeUtil;
 
 public class TreePreorder {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String[] array = { "1", "2", "3", "4", "5", "6", "7", "8" };
         Node<String> treeRoot = TreeUtil.createTreeFromArray(array);
         List<String> preorder = recursivePreorder(treeRoot);

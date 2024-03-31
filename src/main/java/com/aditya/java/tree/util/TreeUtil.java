@@ -18,7 +18,7 @@ public class TreeUtil {
             nextProcessingQueue.offer(root);
 
             for (int i = 1; i < array.length;) {
-                if (currentlyProcessingQueue.size() == 0) {
+                if (currentlyProcessingQueue.isEmpty()) {
                     // nextQ becomes currentQ and is reinitialized
                     currentlyProcessingQueue = nextProcessingQueue;
                     nextProcessingQueue = new LinkedList<>();
